@@ -1,0 +1,12 @@
+{
+    "name": "hermy/littleHelpers",
+    "description": "My little helpers for Kirby CMS",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonas Rebmann",
+            "email": "kontakt@jonasrebmann.de"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "hermy/formular-one",
+    "description": "DIY Formbuilder for Kirby CMS",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonas Rebmann",
+            "email": "kontakt@jonasrebmann.de"
+        }
+    ]
+}

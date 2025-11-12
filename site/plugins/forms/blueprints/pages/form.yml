@@ -1,0 +1,94 @@
+title: Formular
+icon: 📄
+
+status: options/status
+
+tabs:
+  contentTab:   
+    label: Content
+    icon: page
+    sections:
+      fields:
+        type: fields
+        fields:
+          headline:
+            type: text
+            label: Überschrift
+            width: 1/2
+          description:
+            type: writer
+            label: Beschreibung
+            width: 1/2
+          formbuilder:
+            type: layout
+            layouts:
+              - "1/1"
+              - "1/2, 1/2"
+            fieldsets:
+              - field_std
+              - field_textarea
+              - field_email
+              - field_select
+              - field_privacy
+  settingsTab:
+    label: Einstellungen
+    icon: settings
+    columns:
+      - width: 2/3
+          sections:
+            optionsFields:
+              type: fields
+              fields:
+                headline-01:
+                  type: headline
+                  label: Feedback-texte
+                success:
+                  type: writer
+                  label: Erfolgsmeldung
+                  default: Vielen Dank für Ihre Anfrage.
+                  size: small
+                  width: 1/2
+                error:
+                  type: writer
+                  label: Fehlermeldung
+                  default: Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.
+                  size: small
+                  width: 1/2
+                headline-02:
+                  type: headline
+                  label: E-Mail-Inhalte
+                subject:
+                  type: text
+                  label: Betreff
+                  default: Kontaktformular
+                  buttons: false
+                body:
+                  type: textarea
+                  label: E-Mail-Text
+                  size: small
+                  buttons:
+                    - bold
+                    - link
+                  help: |
+                    "##Name## wird durch den Namen des Absenders ersetzt."
+      - width: 1/3
+          sections:
+            optionsSidebar:
+              type: fields
+              fields:
+                headline-03:
+                  type: headline
+                  label: Meta-Daten
+                adminSubject:
+                  type: text
+                  label: Betreff für Admin
+                toemail:
+                  type: email
+                  label: Notification senden an
+                  help: Adresse, an die Nachrichten weitergelitet werdenWenn nicht angegben, wird die E-Mail-Adresse aus den Grundeinstellungen verwendet.
+
+                fromemail:
+                  type: email
+                  label: E-Mail-Adresse
+                  help: Diese Email-Adresse sehen Kund*innen als Absender, wenn sie eine Bestätigungsmail erhalten. Wenn nicht angegben, wird die E-Mail-Adresse aus den Grundeinstellungen verwendet.
+                

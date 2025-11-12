@@ -1,0 +1,17 @@
+title: Projekte
+
+tabs:
+  content-tab:
+    label: Inhalt
+    icon: box
+    columns:
+      - width: 2/3
+        sections:
+          projects:
+            type: pages
+            layout: cards
+            image: 
+              query: page.cover.toFile
+              ratio: 16/9
+              cover: true
+  seo: seo/page

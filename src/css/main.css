@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@source "../../site";
+
+@theme {
+    --font-sans: 'BDO Grotesk', monospace, 'Arial', sans-serif;
+    --font-display: 'Mondwild', 'Georgia', 'Times New Roman', serif;
+
+    --font-size-2xs: clamp(12px, 0.5rem, 14px);
+    --line-height-2xs: 0.75rem;
+
+    --animation-poke-shake: poke-shake 0.6s infinite alternate;
+
+    --color-*: initial;
+ 
+    --color-current: currentColor;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+@layer utilities {
+    .font-display {
+        @apply tracking-[-0.025em] font-display;
+    }
+
+    .text-huge {
+        @apply leading-[0.85];
+    }
+
+    .text-gigantic {
+        @apply leading-[0.825];
+    }
+
+    .fullscreen {
+        @apply relative max-w-screen left-1/2 right-1/2 -ml-[50svw] -mr-[50svw] ;
+    }
+}
+
+@layer components {
+    html {
+        @apply font-sans  font-normal tracking-[-0.03rem] text-[clamp(1rem,_1vw_+_0.325rem,_1.75rem)];
+    }
+
+    body {
+        @apply px-8 text-base antialiased;
+    }
+
+    svg {
+        @apply w-full h-auto fill-current;
+    }
+}
+
+/** * Fonts
+ * -----------------------------
+ * Fonts werden AUS GRÜNDEN nicht im CSS importiert, sondern im fonts.php snippet.
+ */
