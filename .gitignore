@@ -63,3 +63,8 @@ Icon
 # ---------------
 
 /content/*
+
+# Kirby folder
+# ---------------
+
+/kirby
