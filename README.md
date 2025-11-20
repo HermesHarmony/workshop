@@ -9,4 +9,6 @@ Diese Module sind für fortgeschrittene Zwecke integriert:
 [Vite](https://https://vite.dev/)
 [Tailwind CSS](https://tailwindcss.com/)
 
+Um diese Boilerplate zu nutzen, muss Kirby über 'composer install' und Vite über 'npm install' installiert werden.
+
 ©2025 [Jonas Rebmann](https://jonasrebmann.de)

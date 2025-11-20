@@ -1,14 +1,22 @@
+/** 
+    * Haupt-CSS Datei für die Website
+    * Hier werden alle globalen Styles definiert
+    * Guide: 2.3
+*/
+
 @import './reset.css';
+
+
 /* 
-    Wenn Tailwind CSS genutzt wird, diese Zeilen einkommentieren (Guide: ):
+    Wenn Tailwind CSS genutzt wird, diese Zeilen einkommentieren (Guide: 4.2):
     @import "tailwindcss";
     @source "../../site";
 */
     
 
 body {
+    font-family: 'jetbrains-mono', sans-serif;
     position: relative;
-    font-family: monospace;
     font-size: 16px; /* Basis-Schriftgröße. Da wir auf bei allen Einheiten der Website auf rem setzen, vergrößern sich alle Elemente proportional zu diesem Wert */
     margin: 0;
     min-height: 100vh; /* Body soll mindestens die Höhe des Viewports haben, damit der Footer immer unten bleiben kann */
@@ -80,7 +88,6 @@ body {
     margin-bottom: 2rem;
 }
 
-
 .footer {
     position: absolute; /* Footer immer am unteren Rand der Seite ankleben */
     bottom: 0;
@@ -90,4 +97,28 @@ body {
     border-top: 1px solid #ccc;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.article p + p {
+    margin-top: 1rem;
+}
+
+.artth2 + p {
+    margin-top: 1.5rem;
+}
+
+
+/* Font Faces */
+@font-face {
+    font-family: jetbrains-mono;
+    font-weight: normal;
+    font-style: normal;
+    src: url('/src/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: jetbrains-mono;
+    font-weight: bold;
+    font-style: normal;
+    src: url('/src/fonts/JetBrainsMono-Bold.woff2') format('woff2');
 }

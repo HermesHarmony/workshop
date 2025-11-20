@@ -1,22 +1,13 @@
 {
   "css/main.css": {
-    "file": "assets/main-B_SY1GJM.css",
+    "file": "assets/main-CC1Vx696.css",
     "src": "css/main.css",
     "isEntry": true
   },
   "js/templates/default.js": {
-    "file": "assets/default-wbEufGYc.js",
+    "file": "assets/default-DIIzlG-o.js",
     "name": "default",
     "src": "js/templates/default.js",
     "isEntry": true
-  },
-  "js/templates/home.js": {
-    "file": "assets/home-23lp77Ha.js",
-    "name": "home",
-    "src": "js/templates/home.js",
-    "isEntry": true,
-    "imports": [
-      "js/templates/default.js"
-    ]
   }
 }
