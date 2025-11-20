@@ -1,55 +1,76 @@
-@import "tailwindcss";
-@source "../../site";
+@import './reset.css';
+/* 
+    Wenn Tailwind CSS genutzt wird, diese Zeilen einkommentieren (Guide: ):
+    @import "tailwindcss";
+    @source "../../site";
+*/
+    
 
-@theme {
-    --font-sans: 'BDO Grotesk', monospace, 'Arial', sans-serif;
-    --font-display: 'Mondwild', 'Georgia', 'Times New Roman', serif;
+body {
+    position: relative;
+    font-family: monospace;
+    font-size: 16px; /* Basis-Schriftgröße. Da wir auf bei allen Einheiten der Website auf rem setzen, vergrößern sich alle Elemente proportional zu diesem Wert */
+    padding-bottom: 6rem; /* Platz für den Footer schaffen */
+    margin: 0;
+    min-height: 100vh; /* Body soll mindestens die Höhe des Viewports haben, damit der Footer immer unten bleiben kann */
+    padding: 0 2rem;
+    background-color: #fff;
+    color: #333;
 
-    --font-size-2xs: clamp(12px, 0.5rem, 14px);
-    --line-height-2xs: 0.75rem;
-
-    --animation-poke-shake: poke-shake 0.6s infinite alternate;
-
-    --color-*: initial;
- 
-    --color-current: currentColor;
-    --color-white: #fff;
-    --color-black: #000;
 }
 
-@layer utilities {
-    .font-display {
-        @apply tracking-[-0.025em] font-display;
-    }
-
-    .text-huge {
-        @apply leading-[0.85];
-    }
-
-    .text-gigantic {
-        @apply leading-[0.825];
-    }
-
-    .fullscreen {
-        @apply relative max-w-screen left-1/2 right-1/2 -ml-[50svw] -mr-[50svw] ;
-    }
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-@layer components {
-    html {
-        @apply font-sans  font-normal tracking-[-0.03rem] text-[clamp(1rem,_1vw_+_0.325rem,_1.75rem)];
-    }
 
-    body {
-        @apply px-8 text-base antialiased;
-    }
 
-    svg {
-        @apply w-full h-auto fill-current;
-    }
+/* Navigation Styles */
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
-/** * Fonts
- * -----------------------------
- * Fonts werden AUS GRÜNDEN nicht im CSS importiert, sondern im fonts.php snippet.
- */
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+} 
+
+.navigation li {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles für wiederkehrende Elemente der Seite */
+.card {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+.footer {
+    position: absolute; /* Footer immer am unteren Rand der Seite ankleben */
+    bottom: 0;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #ccc;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,2 +1,0 @@
-<?= $data['body-text'] ?>
-asdfasdf

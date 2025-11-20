@@ -1,0 +1,11 @@
+title: Projekte
+
+sections:
+  bikes:
+    type: pages
+    layout: cards
+    template: bike
+    image:
+      query: page.cover.toFile
+      ratio: 16/9
+      cover: true

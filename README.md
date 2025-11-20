@@ -1,11 +1,11 @@
-### Jonas Rebmanns Boilerplate
-
-v1.3.1 Codename: J.F.
+### Personal Website Boilerplate by Jonas Rebmann
 
 Boilerplate für Projekte von Jonas Rebmann. Enthält mehrere praktische, selbstgeschriebene JS-Frameworks, Kirby Plugins und einige oft gebrauchte Template-Skellette.
 
-Diese Version der Boilperlate nutzt:  
-[Kirby CMS](https://getkirby.com)  
+Diese Boilerplate bindet ein:  
+[Kirby CMS](https://getkirby.com)
+
+Diese Module sind für fortgeschrittene Zwecke integriert:
 [Vite](https://https://vite.dev/)
 [Tailwind CSS](https://tailwindcss.com/)
 

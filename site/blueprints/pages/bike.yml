@@ -1,0 +1,33 @@
+title: Projekte
+
+sections:
+  main:
+    type: fields
+    fields:
+      cover:
+        label: Cover Bild
+        type: files
+        multiple: false
+        help: Wähle ein Bild aus, das als Cover für dieses Projekt verwendet wird.
+
+      description:
+        label: Beschreibung
+        type: textarea
+        size: large
+        help: Füge eine kurze Beschreibung des Projekts hinzu.
+
+      speed:
+        label: Geschwindigkeit
+        type: number
+        help: Gib die Höchstgeschwindigkeit des Bikes in km/h an.
+        width: 1/2
+
+      marke:
+        label: Marke
+        type: text
+        help: Gib die Marke des Bikes an.
+        width: 1/2
+  images:
+    type: files
+    label: Alle Bilder
+    layout: cards

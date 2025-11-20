@@ -1,0 +1,28 @@
+title: Home
+columns:
+  - width: 2/3
+    sections:
+      main:
+        type: fields
+        fields:
+          intro:
+            label: Einführungstext
+            type: textarea
+            size: large
+            help: Füge einen kurzen Einführungstext für die Startseite hinzu.
+  - width: 1/3
+    sections:
+      sidebar:
+        type: fields
+        fields:
+          portrait:
+            label: Portrait Bild
+            type: files
+            multiple: false
+            layout: cards
+            help: Wähle ein Bild aus, das als Portrait auf der Startseite verwendet wird.
+          email:
+            label: E-Mail Adresse
+            type: email
+      files:
+        type: files
