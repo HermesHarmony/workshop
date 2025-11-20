@@ -12,6 +12,6 @@
 
 <?php else: ?>
     <!-- Hier wird die CSS Datei verlinkt, in der unsere Styles liegen -->
-    <?= css('./src/css/main.css')  ?>
-    
+    <?= css('/src/css/main.css')  ?>
+
 <?php endif; ?>

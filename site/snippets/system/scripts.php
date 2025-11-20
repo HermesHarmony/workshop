@@ -12,6 +12,6 @@
 
 <?php else: ?>
     <!-- zum üben nutzen wir hier eine einfache JS Datei -->
-    <?=  js('./src/js/default.js') ?>
+    <?=  js('/src/js/templates/default.js') ?>
 
 <?php endif; ?>

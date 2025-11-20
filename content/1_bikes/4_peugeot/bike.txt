@@ -10,11 +10,11 @@ Description: Sit minim cillum eu irure est sunt sint commodo anim. Excepteur exc
 
 ----
 
-Speed: 120
+Price: 1200
 
 ----
 
-Marke: Peugeot
+Brand: Peugeot
 
 ----
 

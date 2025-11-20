@@ -14,11 +14,11 @@ Et aute proident incididunt aliqua excepteur ex amet aliqua ullamco in aute sint
 
 ----
 
-Speed: 200
+Price: 2999
 
 ----
 
-Marke: Cinelli
+Brand: Cinelli
 
 ----
 

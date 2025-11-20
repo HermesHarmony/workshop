@@ -16,11 +16,11 @@ Ad nulla ea proident mollit anim consectetur fugiat qui in aliquip sit do adipis
 
 ----
 
-Speed: 40
+Price: 400
 
 ----
 
-Marke: Other
+Brand: Other
 
 ----
 

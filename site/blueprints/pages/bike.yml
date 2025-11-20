@@ -16,13 +16,13 @@ sections:
         size: large
         help: Füge eine kurze Beschreibung des Projekts hinzu.
 
-      speed:
-        label: Geschwindigkeit
+      price:
+        label: Preis
         type: number
-        help: Gib die Höchstgeschwindigkeit des Bikes in km/h an.
+        help: Gib den Preis des Bikes in $ an.
         width: 1/2
 
-      marke:
+      brand:
         label: Marke
         type: text
         help: Gib die Marke des Bikes an.
