@@ -8,6 +8,6 @@
 <body class="<?= $page->template() . '__body' ?>">
 
     <?php snippet('system/fonts') ?>
-    <?php snippet('nav') ?>
+    <?php snippet('components/nav') ?>
 
     <main id="main" class="wrapper">

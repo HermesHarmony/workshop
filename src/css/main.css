@@ -4,16 +4,22 @@
     * Guide: 2.3
 */
 
-@import './reset.css';
 
+/* Wir importieren einen kleinen CSS reset, der vom Broeser voreingestellte Styles entfernt */
+@import './reset.css';
 
 /* 
     Wenn Tailwind CSS genutzt wird, diese Zeilen einkommentieren (Guide: 4.2):
     @import "tailwindcss";
     @source "../../site";
 */
-    
 
+
+/* 
+** HIER WIRD DEFINiTERT, WIE UNSERE WEBSITE AUSSEHEN WIRD. **
+*/
+
+/* Der Body ist der Hauptcontainer. Styles, hier werden einge Styles definiert, die die gesamt Seite betreffen, wie Hintergrund, Schriftart, etc. */
 body {
     font-family: 'jetbrains-mono', sans-serif;
     position: relative;
@@ -22,22 +28,20 @@ body {
     min-height: 100vh; /* Body soll mindestens die Höhe des Viewports haben, damit der Footer immer unten bleiben kann */
     padding: 0 2rem;
     padding-bottom: 6rem; /* Platz für den Footer schaffen */
-    background-color: #fff;
+    background-color: #f4f4f4;
     color: #333;
 
 }
 
+/* Sorgt dafür, dass der Inhalt zentriert und auf eine maximale Breite begrenzt ist */
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
 }
 
-
-
 /* Navigation Styles */
-
 .navigation {
-    display: flex;
+    display: flex; /* Ordnet die Inhalt des Containers nebeninander an */
     gap: 2rem;
     border-bottom: 1px solid #ccc;
     margin-bottom: 2rem;
@@ -47,7 +51,7 @@ body {
 
 .navigation-item {
     text-decoration: none;
-    color: black;
+    color: currentColor;
 }
 
 .navigation-item:hover {
@@ -61,9 +65,9 @@ body {
 /* Styles für wiederkehrende Elemente der Seite */
 .card {
     display: block;
-    color: black;
     text-decoration: none;
     margin-bottom: 4rem;
+    color: currentColor;
 }
 
 .card-title {
@@ -74,9 +78,34 @@ body {
 }
 
 .page-title {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+.page-portrait {
+    width: 15rem;
+    border-radius:32px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.page-intro {
+    margin-bottom: 2rem;
+}
+
+.page-skills-list {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.page-skill {
+    background-color: #252525;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
 }
 
 .page-cover {
@@ -99,16 +128,16 @@ body {
     transform: translateX(-50%);
 }
 
+/* Styles, die Schrift schöner machen */
 .article p + p {
     margin-top: 1rem;
 }
 
-.artth2 + p {
-    margin-top: 1.5rem;
+strong {
+    font-weight: bold;
 }
 
-
-/* Font Faces */
+/* Hier wird der Font eingebunden, den wir in src/fonts/ abgelegt haben. Wenn du einen anderen Font nutzen möchtest, musst du hier die Pfade und Namen entsprechend anpassen und den Font in den entsprechenden Ordner laden. */
 @font-face {
     font-family: jetbrains-mono;
     font-weight: normal;

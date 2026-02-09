@@ -1,1 +1,9 @@
+Title: 404
+
+----
+
+Text: Das hier ist die Error-Seite. Sie wird angezeigt, wenn es keine passende Seite zur URL gibt
+
+----
+
 Uuid: nothq5aciriw7vn8

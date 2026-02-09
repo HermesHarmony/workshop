@@ -1,28 +1,29 @@
+# Dies ist das Blueprint des Templates "Home".
+# In Blueprints werden die Inhalte und die Struktur der Seite im Backend definiert. Hier legen wir also fest, welchen Inhalt wir über das Backend hinzufügen und verwalten können.
 title: Home
-columns:
-  - width: 2/3
-    sections:
-      main:
-        type: fields
-        fields:
-          intro:
-            label: Einführungstext
-            type: textarea
-            size: large
-            help: Füge einen kurzen Einführungstext für die Startseite hinzu.
-  - width: 1/3
-    sections:
-      sidebar:
-        type: fields
-        fields:
-          portrait:
-            label: Portrait Bild
-            type: files
-            multiple: false
-            layout: cards
-            help: Wähle ein Bild aus, das als Portrait auf der Startseite verwendet wird.
-          email:
-            label: E-Mail Adresse
-            type: email
-      files:
+
+# Kirby untreteilt das Backend in Sections
+sections:
+  # Dies ist eine Field-Section, sie enthält also verschieden Arten von Conentt-Feldern, die Inhalt in der TXT-Datei der Seite speichern
+  content:
+    type: fields
+    fields:
+      intro:
+        label: Einführungstext
+        type: textarea
+        size: large
+        help: Füge einen kurzen Einführungstext für die Startseite hinzu.
+
+      portrait:
+        label: Portrait Bild
         type: files
+        multiple: false
+        layout: cards
+        help: Wähle ein Bild aus, das als Portrait auf der Startseite verwendet wird.
+      email:
+        label: E-Mail Adresse
+        type: email
+
+  # Dies ist eine Files-Section, sie bildet die Datei im Odner der Seite ab und ermöglich uns, über das Backend neue Dateien hinzuzufügen, zu sortieren und zu löschen.
+  files:
+    type: files

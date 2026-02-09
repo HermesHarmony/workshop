@@ -1,30 +1,25 @@
+# Dies ist das Site-Bleuprint, es konfiguriert die Startseite des Panels.
+# In Blueprints werden die Inhalte und die Struktur der Seite im Backend definiert. Hier legen wir also fest, welchen Inhalt wir über das Backend hinzufügen und verwalten können.
+
 title: Site
-unlisted: false
-templates: font
 
-tabs:
-  tab1:
-    label: Dashboard
-    icon: dashboard
-    columns:
-      - width: 1/4
-          sections:
-            welcome:
-              type: fields
-              fields:
-                info:
-                  type: info
-                  theme: none
-                  label: Willkommen im Kirby Panel 🎉
-                  text: |
-                    Hi, das hier ist das Panel von Kirby. Hier kannst du deine Website verwalten und Inhalte hinzufügen.
+# Kirby untreteilt das Backend in Sections
+sections:
+  # Dies ist eine Field-Section, sie enthält also verschieden Arten von Conentt-Feldern, die Inhalt in der TXT-Datei der Seite speichern. In diesem Fall gibt sie aber nur den Begrüßungstext aus.
+  welcome:
+    type: fields
+    fields:
+      info:
+        type: info
+        theme: none
+        label: Willkommen im Kirby Panel 🎉
+        text: |
+          Hi, das hier ist das Panel von Kirby. Hier kannst du deine Website verwalten und Inhalte hinzufügen.
 
-
-      - width: 3/4
-          sections: 
-            allPages:
-              headline: Hauptseiten
-              type: pages
-              image: 
-                query: icon
-                back: black 
+  # Dies ist eine Pages-Section, sie bildet die Unterseiten der Seite ab und ermöglicht es uns, über das Backend neue Unterseiten hinzuzufügen, zu sortieren und zu löschen.
+  allPages:
+    headline: Hauptseiten
+    type: pages
+    image:
+      query: icon
+      back: black

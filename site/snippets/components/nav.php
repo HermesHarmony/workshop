@@ -1,3 +1,4 @@
+<!-- Unsere Navigation ist ein Snippet, da wir sie auf allen Seiten unserer Seite einbinden wollen. So müssen wir sie nur einmal anlegen und können sie dann überall nutzen. -->
 <nav class="wrapper navigation">
 
     <a class="navigation-item <?= $page->isHomePage() ? ' active' : '' ?>" href="<?= $site->url() ?>">

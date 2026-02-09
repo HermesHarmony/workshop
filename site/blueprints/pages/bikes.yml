@@ -1,6 +1,11 @@
-title: Projekte
+# Dies ist das Blueprint der Seite "Bikes".
+# In Blueprints werden die Inhalte und die Struktur der Seite im Backend definiert. Hier legen wir also fest, welchen Inhalt wir über das Backend hinzufügen und verwalten können.
 
+title: Fahrräder
+
+# Kirby untreteilt das Backend in Sections
 sections:
+  # Dies ist eine Pages-Section, sie bildet die Unterseiten der Seite ab und ermöglicht es uns, über das Backend neue Unterseiten hinzuzufügen, zu sortieren und zu löschen.
   bikes:
     type: pages
     layout: cards

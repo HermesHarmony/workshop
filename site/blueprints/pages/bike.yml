@@ -1,20 +1,25 @@
-title: Projekte
+# Dies ist das Blueprint des Templates "Bike".
+# In Blueprints werden die Inhalte und die Struktur der Seite im Backend definiert. Hier legen wir also fest, welchen Inhalt wir über das Backend hinzufügen und verwalten können.
 
+title: Fahrrad
+
+# Kirby untreteilt das Backend in Sections
 sections:
-  main:
+  # Dies ist eine Field-Section, sie enthält also verschieden Arten von Conentt-Feldern, die Inhalt in der TXT-Datei der Seite speichern
+  content:
     type: fields
     fields:
       cover:
         label: Cover Bild
         type: files
         multiple: false
-        help: Wähle ein Bild aus, das als Cover für dieses Projekt verwendet wird.
+        help: Wähle ein Bild aus, das als Cover für dieses Bike verwendet wird.
 
       description:
         label: Beschreibung
         type: textarea
         size: large
-        help: Füge eine kurze Beschreibung des Projekts hinzu.
+        help: Füge eine kurze Beschreibung des Bikes hinzu.
 
       price:
         label: Preis
@@ -27,6 +32,8 @@ sections:
         type: text
         help: Gib die Marke des Bikes an.
         width: 1/2
+
+  # Dies ist eine Files-Section, sie bildet die Datei im Odner der Seite ab und ermöglich uns, über das Backend neue Dateien hinzuzufügen, zu sortieren und zu löschen.
   images:
     type: files
     label: Alle Bilder

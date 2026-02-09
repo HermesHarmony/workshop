@@ -1,11 +1,16 @@
-title: Default Page
-preset: page
-fields:
-  text:
-    label: Text
-    type: textarea
-    size: large
+# Dies ist das Blueprint des Templates "Default"
+# Kirby fällt auf dieses Template zurück, wenn kein anderes Template für eine Seite definiert ist. Es ist also das Standard-Template für alle Seiten, die kein eigenes Template haben.
+# In Blueprints werden die Inhalte und die Struktur der Seite im Backend definiert. Hier legen wir also fest, welchen Inhalt wir über das Backend hinzufügen und verwalten können.
 
-  seo: seo/page
+title: Standardseite
 
-
+# Kirby untreteilt das Backend in Sections
+sections:
+  # Dies ist eine Field-Section, sie enthält also verschieden Arten von Conentt-Feldern, die Inhalt in der TXT-Datei der Seite speichern
+  content:
+    type: fields
+    fields:
+      text:
+        label: Text
+        type: textarea
+        size: large

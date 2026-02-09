@@ -6,12 +6,12 @@
 <!-- favcion -->
 <link rel="shortcut icon" type="image/x-icon" href="<?= asset('assets/icons/favicon.png')->url() ?>">
 
-<?php if(option('vite') == true): ?>
-    <!-- Wenn wir mit Vite arbeiten, dann diese Zeile statt der oberen (Guide: 4.3) -->
-    <?= vite()->css('css/main.css') ?>
-
-<?php else: ?>
+<?php if(option('vite') === false): ?>
     <!-- Hier wird die CSS Datei verlinkt, in der unsere Styles liegen (Guide: 2.3)-->
     <?= css('/src/css/main.css')  ?>
+
+<?php else: ?>
+    <!-- Wenn wir mit Vite arbeiten, dann diese Zeile statt der oberen (Guide: 4.3) -->
+    <?= vite()->css('css/main.css') ?>
 
 <?php endif; ?>
